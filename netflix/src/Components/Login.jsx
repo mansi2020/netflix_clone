@@ -35,7 +35,9 @@ const Login = () => {
           toast.success(res.data.message);
           setLoading(false);
         }
+        console.log(res.data.user);
         dispatch(setUser(res.data.user));
+        console.log("dataset",res.data.user);
         navigate("/browse");
         // console.log(res);
       } catch (error) {
