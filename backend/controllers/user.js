@@ -1,9 +1,13 @@
-import {User} from "../models/userModel.js"; 
-import bcryptjs from "bcryptjs";
-import jwt from "jsonwebtoken"
+// import {User} from "../models/userModel.js"; 
+// import bcryptjs from "bcryptjs";
+// import jwt from "jsonwebtoken"
+
+const User = require("../models/userModel.js"); 
+const bcryptjs = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 
 // for login existing user
-export const Login = async(req,res)=>{
+ const Login = async(req,res)=>{
     try{
         const {email,password} = req.body;
         if(!email || !password){
@@ -46,7 +50,7 @@ export const Login = async(req,res)=>{
 }
 
 // for logout
-export const Logout = async (req,res)=>{
+ const Logout = async (req,res)=>{
     return res.status(200).cookie("token","",{expiresIn:new Date(Date.now()),httpOnly:true}).json({
         message:"User logged out succesfully.",
         success:true
@@ -54,7 +58,7 @@ export const Logout = async (req,res)=>{
 }
 
 // for register new user
-export const Register = async (req,res)=>{
+ const Register = async (req,res)=>{
     try{
         const {fullName,email,password} = req.body;
         if(!fullName || !email || !password){
@@ -87,3 +91,5 @@ export const Register = async (req,res)=>{
         console.log(error);
     }
 }
+
+module.exports = { Register,Login,Logout }

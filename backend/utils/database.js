@@ -1,5 +1,8 @@
-import mongoose from "mongoose";
-import dotenv from "dotenv";
+// import mongoose from "mongoose";
+// import dotenv from "dotenv";
+
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
 dotenv.config({
     path: "../.env"
@@ -15,4 +18,4 @@ const databaseConnection = ()=>{
     
 }
 
-export default databaseConnection;
+module.exports =  databaseConnection;

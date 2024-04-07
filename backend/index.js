@@ -1,11 +1,17 @@
 //step-1 server create
-// const express = require("express")
-import express from "express";
-import dotenv from "dotenv";
-import databaseConnection from "./utils/database.js"
-import cookieParser from "cookie-parser";
-import userRoute from "./routes/userRoute.js"
-import cors from "cors";
+const express = require("express");
+const dotenv =require("dotenv") ;
+const databaseConnection =require("./utils/database.js");
+const cookieParser =require("cookie-parser"); 
+const userRoute =require("./routes/userRoute.js");
+const cors =require( "cors");
+
+// import express from "express";
+// import dotenv from "dotenv";
+// import databaseConnection from "./utils/database.js"
+// import cookieParser from "cookie-parser";
+// import userRoute from "./routes/userRoute.js"
+// import cors from "cors";
 
 databaseConnection();
 
