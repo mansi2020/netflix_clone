@@ -2,7 +2,7 @@
 // import bcryptjs from "bcryptjs";
 // import jwt from "jsonwebtoken"
 
-const User = require("../models/userModel.js"); 
+const User = require("../models/userModel"); 
 const bcryptjs = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 

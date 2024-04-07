@@ -2,7 +2,7 @@
 // import { Register,Login,Logout } from "../controllers/User.js";
 
 const express = require("express") ;
-const { Register,Login,Logout } = require("../controllers/User.js") ;
+const { Register,Login,Logout } = require("../controllers/user") ;
 
 const router = express.Router();
 
