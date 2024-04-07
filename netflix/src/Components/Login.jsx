@@ -26,7 +26,7 @@ const Login = () => {
     if (isLogin) {
       //login
       try {
-        const res = await axios.post(`https://netflix-clone-gder.onrender.com/api/v1/user/login`, {
+        const res = await axios.post(`/api/v1/user/login`, {
           email,
           password,
         },{headers:{"Content-Type":"application/json"},
@@ -46,7 +46,7 @@ const Login = () => {
     } else {
       //register network call
       try {
-        const res = await axios.post(`https://netflix-clone-gder.onrender.com/api/v1/user/register`, {
+        const res = await axios.post(`https://netflix-clone-2-7q5p.onrender.com/api/v1/user/register`, {
           fullName,
           email,
           password,
