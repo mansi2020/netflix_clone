@@ -26,7 +26,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions ={
-    origin:"https://netflix-clone-drab-pi.vercel.app/",
+    origin:"https://netflix-clone-drab-pi.vercel.app",
     credentials:true
 
 }
