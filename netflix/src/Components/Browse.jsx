@@ -7,43 +7,34 @@ import MovieContainer from "./MovieContainer";
 import axios from "axios";
 import { options } from "../utils/constant";
 import { setNowPlayingMovies } from "./../redux/movieSlice";
-import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
-import usePopularMovies from "../hooks/usePopularMovies";
-import useTopRatedMovies from "../hooks/useTopRatedMovies";
-import useUpcomingMovies from "../hooks/useUpcomingMovies";
+
 import SearchMovie from "./SearchMovie";
 
 const Browse = () => {
   const navigate = useNavigate();
   const user = useSelector((store) => store.app.user);
   const toggle = useSelector((store) => store.movie.toggle);
-
+  
   
 
   // protect routing
   useEffect(() => {
-    if(!user){
-      navigate("/");
-    }
+    // if(!user){
+    //   navigate("/");
+    // }
     // my custom hooks
-  useNowPlayingMovies();
-  usePopularMovies();
-  useTopRatedMovies();
-  useUpcomingMovies();
+  
   }, []);
   return (
     <div>
       <Header />
-      <div>
-        {toggle ? (
-          <SearchMovie />
-        ) : (
-          <>
+     
+        
             <MainContainer />
             <MovieContainer />
-          </>
-        )}
-      </div>
+         
+     
+     
     </div>
   );
 };

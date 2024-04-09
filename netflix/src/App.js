@@ -4,7 +4,7 @@ import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Body/>
       <Toaster/>
     </div>

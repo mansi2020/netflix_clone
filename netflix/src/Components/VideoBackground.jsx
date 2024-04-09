@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
 
 const VideoBackground = () => {
+  
   return (
-    <div className="w-screen">
+    <div className="w-screen overflow-x-hidden">
       
       <iframe
       className="w-screen aspect-video"
@@ -11,6 +13,7 @@ const VideoBackground = () => {
         frameborder="0"
         allowfullscreen
       ></iframe>
+      
     </div>
   );
 };
