@@ -17,6 +17,7 @@ const Header = () => {
 
   // logout
   const logoutHandler = async()=>{
+    navigate("/");
     try{
       const res = await axios.get(`${API_END_POINT}/logout`);
       if(res.data.success){
@@ -24,7 +25,7 @@ const Header = () => {
       }
       
       dispatch(setUser(null));
-      navigate("/");
+      
     }catch(error){
       console.log(error);
     }
