@@ -19,9 +19,9 @@ const Browse = () => {
 
   // protect routing
   useEffect(() => {
-    // if(!user){
-    //   navigate("/");
-    // }
+    if(!user){
+      navigate("/");
+    }
     // my custom hooks
   
   }, []);
