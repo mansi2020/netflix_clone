@@ -20,7 +20,7 @@ const Browse = () => {
   // protect routing
   useEffect(() => {
     if(!user){
-      navigate("/");
+      navigate("https://netflix-clone-drab-pi.vercel.app/");
     }
     // my custom hooks
   

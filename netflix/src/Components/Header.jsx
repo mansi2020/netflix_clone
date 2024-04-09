@@ -24,7 +24,7 @@ const Header = () => {
       }
       
       dispatch(setUser(null));
-      navigate("/");
+      navigate("https://netflix-clone-drab-pi.vercel.app/");
     }catch(error){
       console.log(error);
     }
