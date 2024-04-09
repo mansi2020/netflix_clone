@@ -13,9 +13,9 @@ This document serves as a guide to the Netflix Clone Fullstack Development proje
 
 ## UI :
 ![image](https://github.com/mansi2020/netflix_clone/assets/57188328/b0638793-8ca3-44c3-ace8-ae72706aac6f)  
-![image](https://github.com/mansi2020/netflix_clone/assets/57188328/a99bfdcc-a795-469f-b490-ff2e899b260b)  
+![image](https://github.com/mansi2020/netflix_clone/assets/57188328/a99bfdcc-a795-469f-b490-ff2e899b260b)    
 
-
+![screencapture-netflix-clone-drab-pi-vercel-app-browse-2024-04-10-01_38_02-min (1)](https://github.com/mansi2020/netflix_clone/assets/57188328/450033ef-15dc-4936-8ca6-03d08255bc21)
 
 
 ## Technologies Used:
