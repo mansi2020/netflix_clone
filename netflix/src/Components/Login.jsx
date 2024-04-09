@@ -54,7 +54,7 @@ const Login = () => {
           password,
         },{headers:{"Content-Type":"application/json"},
         withCredentials:true});
-        // console.log(res);
+        console.log(res);
         if(res.data.success){
           toast.success(res.data.message);
           setLoading(false);
