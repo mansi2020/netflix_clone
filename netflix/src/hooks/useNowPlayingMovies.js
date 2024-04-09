@@ -7,6 +7,7 @@ const useNowPlayingMovies = async()=>{
     const dispatch = useDispatch();
     try {
       const response = await axios.request(options1);
+      
       dispatch(setNowPlayingMovies(response.data.d));
       // console.log(response.data.d);
     } catch (error) {

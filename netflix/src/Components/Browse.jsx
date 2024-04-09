@@ -18,17 +18,18 @@ const Browse = () => {
   const user = useSelector((store) => store.app.user);
   const toggle = useSelector((store) => store.movie.toggle);
 
-  // my custom hooks
+  
+
+  // protect routing
+  useEffect(() => {
+    if(!user){
+      navigate("/");
+    }
+    // my custom hooks
   useNowPlayingMovies();
   usePopularMovies();
   useTopRatedMovies();
   useUpcomingMovies();
-
-  // protect routing
-  useEffect(() => {
-    // if(!user){
-    //   navigate("/");
-    // }
   }, []);
   return (
     <div>

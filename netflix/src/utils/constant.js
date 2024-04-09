@@ -25,7 +25,7 @@ export const options1 = {
     url: 'https://imdb8.p.rapidapi.com/auto-complete',
     params: {q: "love,scary"},
     headers: {
-      'X-RapidAPI-Key': '4986fb1656msh3ef2babc5c69ce5p1f9345jsn4373e881a9bb',
+      'X-RapidAPI-Key': 'f755debe8fmshf7d2938ce7afdbap11f8fejsneeaec0837051',
       'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
     }
   };
@@ -35,7 +35,7 @@ export const options1 = {
     url: 'https://imdb8.p.rapidapi.com/auto-complete',
     params: {q: "Time"},
     headers: {
-      'X-RapidAPI-Key': '4986fb1656msh3ef2babc5c69ce5p1f9345jsn4373e881a9bb',
+      'X-RapidAPI-Key': 'f755debe8fmshf7d2938ce7afdbap11f8fejsneeaec0837051',
       'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
     }
   };
